@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <style>
+        tr {
+            border: 1px solid gray;
+        }
+
+        th,
+        td {
+            padding: 5px 15px;
+            text-align: center;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="display-1 text-center my-3">
+            Grading System
+        </h1>
+    </header>
+    <main>
+        <div class="row container-fluid my-5">
+            <div class="col-lg-8 d-flex flex-column align-items-center justify-content-center">
+                <h1 class="display-4 text-center">
+                    Enter your Number
+                </h1>
+                <button class="btn btn-outline-danger my-5" onclick="num_to_grade()">Click Here to calculate your
+                    Grade</button>
+                <h3 class="display-6" id="grade"></h3>
+            </div>
+            <div class="col-lg-4">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                Marks
+                            </th>
+                            <th>
+                                Grade
+                            </th>
+                            <th>
+                                GPA
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                93 - 100
+                            </td>
+                            <td>
+                                A
+                            </td>
+                            <td>
+                                4.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                90 - 92
+                            </td>
+                            <td>
+                                A-
+                            </td>
+                            <td>
+                                3.70
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                87 - 89
+                            </td>
+                            <td>
+                                B+
+                            </td>
+                            <td>
+                                3.30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                83 - 86
+                            </td>
+                            <td>
+                                B
+                            </td>
+                            <td>
+                                3.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                80 - 82
+                            </td>
+                            <td>
+                                B-
+                            </td>
+                            <td>
+                                2.70
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                77 - 79
+                            </td>
+                            <td>
+                                C+
+                            </td>
+                            <td>
+                                2.30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                73 - 76
+                            </td>
+                            <td>
+                                C
+                            </td>
+                            <td>
+                                2.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                70 - 72
+                            </td>
+                            <td>
+                                C-
+                            </td>
+                            <td>
+                                1.70
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                67 - 69
+                            </td>
+                            <td>
+                                D+
+                            </td>
+                            <td>
+                                1.30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                60 - 66
+                            </td>
+                            <td>
+                                D
+                            </td>
+                            <td>
+                                1.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                0 - 59
+                            </td>
+                            <td>
+                                F
+                            </td>
+                            <td>
+                                0.00
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- custom js -->
+    <script src="function.js"></script>
+</body>
+
+</html>
